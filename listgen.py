@@ -16,8 +16,6 @@ def main():
 
     filename = f'nums_{numFrom}_{numTo}_{numStep}.txt'
 
-    # print(numFrom, numTo, numStep)
-
     if not os.path.exists('./lists'):
         os.makedirs('./lists')
 
