@@ -1,5 +1,6 @@
 import os
 import argparse
+import sys
 
 
 def main():
@@ -13,6 +14,11 @@ def main():
     numFrom = args.From
     numTo = args.To
     numStep = args.Step
+
+    if numFrom > numTo:
+        print("Starting point must be less than ending!")
+        sys.exit()
+
 
     filename = f'nums_{numFrom}_{numTo}_{numStep}.txt'
 
