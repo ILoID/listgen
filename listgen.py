@@ -19,7 +19,6 @@ def main():
         print("Starting point must be less than ending!")
         sys.exit()
 
-
     filename = f'nums_{numFrom}_{numTo}_{numStep}.txt'
 
     if not os.path.exists('./lists'):
